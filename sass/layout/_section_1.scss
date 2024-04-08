@@ -1,0 +1,186 @@
+.section__1{
+    padding: 6.5rem;
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+    border-bottom: 1px solid #d4d4d473;
+
+    @media only screen and (max-width:50em) and (min-width:43em) {
+        padding: 7rem 3rem;
+    }
+
+
+    @media only screen and (max-width:43.75em) {
+        padding: 1rem 3rem;
+    }
+    &__part1{
+        text-align: center;
+
+
+        @media only screen and (max-width:50em) {
+            text-align: start;
+        }
+
+        h5{
+            color: var(--synthesia-blue-main);
+            font-weight: 500;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            @media only screen and (max-width:50em) {
+                justify-content: flex-start;
+                font-size: 2.1rem;
+            }
+
+            span{
+                margin-left: .8rem;
+                cursor: help;
+
+                @media only screen and (max-width:50em) {
+                
+                    cursor: pointer;
+                }
+
+                &:hover .tooltip{
+                    opacity: 1;
+                }
+            }
+        }
+        h1{
+            font-size: 4.3rem;
+            font-weight: 500;
+            color: var(--v2-dark-black);
+            margin-bottom: 1.2rem;
+        }
+
+        h4{
+            font-size: 1.9rem;
+            font-weight: 400;
+            color: var(--v2-dark-black);
+            text-align: center;
+            max-width: 50%;
+            margin: 0 auto;
+            line-height: 2.8rem;
+            margin-bottom: 3rem;
+            @media only screen and (max-width:50em) {
+                text-align: start;
+                margin: 0;
+                max-width: 100%;
+                font-size: 2.1rem;
+                line-height: 3.3rem;
+                margin-bottom: 3.5rem;
+            }
+        }
+
+        button{
+            border: none;
+            outline: none;
+            border-radius: .8rem;
+            padding: 1.6rem 2rem;
+            background-color: var(--synthesia-blue-main);
+            color: var(--white);
+            font-size: 1.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            font-weight: 600;
+            cursor: pointer;
+
+            img{
+                margin-left: 1rem;
+            }
+
+           @media only screen and (max-width:50em) {
+              width: 100%;
+              font-size: 2.2rem;
+           }
+        }
+        p{
+            color: var(--color-text);
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            @media only screen and (max-width:50em) {
+                text-align: center;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+
+    &__part2{
+
+        margin-top: 2rem;
+        position: relative;
+        video{
+            width: 100%;
+            cursor: pointer;
+        }
+
+        &:hover .pause {
+            width: 18rem;
+            justify-content: space-around;
+            border-radius: 4rem;
+            background-color: var(--white);
+            height: 6.2rem;
+
+            .choice {
+                display: block;
+            }
+        }
+    }
+
+    &__part3{
+        margin-top: 3rem;
+        max-width: 100%;
+        overflow: hidden;
+        background-image:linear-gradient(to right,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0) 20%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0) 80%,
+        rgba(255, 255, 255, 0.5) 100%,
+        ) ;
+        
+
+        .trusted{
+            text-align: center;
+            font-size: 2rem;
+            color: var(--v2-dark-black);
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+        .trusted__companies{
+           
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: scrollRight 50s ease-in-out .2s infinite forwards;
+    
+            figure {
+                flex-basis: 12rem;
+                flex-shrink: 0;
+                margin-right: 7rem;
+        
+                img {
+                    width: 100%;
+                }
+            }
+           
+        }
+    }
+}
+
+.pause {
+    top: 6%;
+    left: 12%;
+
+
+    @media only screen and (max-width:50em){
+        top: 45%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+    }
+}

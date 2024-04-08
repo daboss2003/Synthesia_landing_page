@@ -1,0 +1,169 @@
+// brakePoints 950 column 750 reduce to one
+
+
+.section__4{
+    background-color: var(--prefarable-white);
+    padding: 8rem;
+
+    @media only screen and (max-width:65.375em){
+        padding: 8rem 2rem;
+    }
+
+    .blue{
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: var(--synthesia-blue-main);
+        margin: 1.5rem 0;
+    }
+
+    h3{
+        text-align: center;
+        font-size: 3.5rem;
+        color: var(--color-text);
+        font-weight: 400;
+        margin-bottom: 4rem;
+    }
+
+    &__card__container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+
+        @media only screen and (max-width:59.375em) {
+            flex-direction: column;
+        }
+    }
+
+    &__card__item{
+        flex-basis: 30%;
+        background-color: var(--grey-lightest);
+        border-radius: 1.5rem;
+        border: 1px solid var(--santa-blue);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3rem;
+        transition: all .4s;
+
+        &:hover{
+            box-shadow: 1rem 1.2rem 1rem var(--synthesia-blue-subtle);
+        }
+
+        @media only screen and (max-width:59.375em) {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 4rem;
+            padding: 5rem;
+        }
+
+        @media only screen and (max-width:46.875em) {
+            display: none;
+        }
+
+        &__head{
+            flex-basis: 30%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 2rem;
+            border-bottom: 1px solid #99929252;
+            @media only screen and (max-width:59.375em) {
+                padding: 1rem;
+            }
+
+            svg{
+                width: 10rem;
+                height: 5rem;
+
+                @media only screen and (max-width:59.375em) {
+                    width: 12rem;
+                    height: 8rem;
+                }
+                
+            }
+
+        }
+
+        &__body{
+            flex-basis: 50%;
+            margin-top: 2rem;
+
+            h4{
+                color: var(--v2-dark-black);
+                font-size: 1.9rem;
+                font-weight: 400;
+                margin-bottom: .5rem;
+                @media only screen and (max-width:59.375em) {
+                    font-size: 2.2rem;    
+                    margin-bottom: 1.5rem;
+                }
+            }
+            h2{
+                font-size: 5rem;
+                font-weight: 600;
+                color: var(--synthesia-blue-darker);
+                margin-bottom: 2.5rem;
+
+                @media only screen and (max-width:59.375em) {
+                    font-size: 7rem;
+                    font-weight: 500;
+                }
+
+            }
+            h6{
+                font-size: 1.7rem;
+                font-weight: 400;
+                width: 90%;
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--color-text);
+                margin-bottom: 3rem;
+
+                @media only screen and (max-width:59.375em) {
+                    font-size: 2.5rem;
+                    line-height: 3rem;
+                    display: block;
+                }
+
+                span{
+                    align-self: flex-start;
+                }
+            }
+
+        }
+
+        &__footer{
+            color: var(--synthesia-blue-main);
+            font-size: 1.8rem;
+            font-weight: 500;
+            transition: all .4s;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+
+            @media only screen and (max-width:59.375em) {
+                font-size: 2.5rem;
+            }
+
+            span{
+                margin-left: .7rem;
+                display: flex;
+                align-items: center;
+            }
+
+            &:hover{
+                color: var(--synthesia-blue-darker);
+            }
+        }
+    }
+}
+
+.item-2{
+    @media only screen and (max-width:46.875em) {
+        display: flex;
+    }
+}

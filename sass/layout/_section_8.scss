@@ -1,0 +1,103 @@
+.section__8{
+    padding: 8rem;
+    background-color: var(--prefarable-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media only screen and (max-width:62.5em){
+        flex-direction: column;
+        padding: 8rem 4rem;
+    }
+
+    .text__box{
+        flex-basis: 30%;
+        margin-bottom: 4rem;
+
+        h6{
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--synthesia-blue-main);
+            margin-bottom: 1rem;
+        }
+        h3{
+            font-size: 3.5rem;
+            font-weight: 400;
+            color: var(--v2-dark-black);
+        }
+    }
+
+    .modal__box{
+        flex-basis: 55%;
+
+        .modal{
+            border: 1px solid var(--helpful-grey-4);
+            padding: 2.5rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            max-height: 7.2rem;
+            margin-bottom: 2rem;
+            transition: all 1s;
+
+            &:hover{
+                box-shadow: .7rem 1rem 2rem var(--grey-medium);
+            }
+
+            @media only screen and (max-width:62.5em) {
+                padding: 4rem;
+                max-height: 10.2rem;
+            }
+
+            @media only screen and (max-width:34.375em) {
+                max-height: 10.8rem;
+                padding: 2rem;
+            }
+
+            &__top{
+                padding-bottom: 2.5rem;
+                cursor: pointer;
+                font-size: 1.8rem;
+                font-weight: 500;
+                color: var(--v2-dark-black);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                @media only screen and (max-width:62.5em) {
+                    padding-bottom: 4rem;
+                    font-size: 2rem;
+                    line-height: 3rem;
+                }
+
+                span{
+                    transition: all .4s;
+                }
+            }
+
+            .bottom{
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: var(--v2-dark-black);
+                width: 90%;
+                line-height: 2.5rem;
+
+                @media only screen and (max-width:62.5em) {
+                    font-size: 1.8rem;
+                    line-height: 3rem;
+                }
+            }
+        }
+
+        .open__modal{
+            max-height: fit-content;
+
+             span{
+                transform: rotateZ(180deg);
+            }
+        }
+    }
+
+
+
+}
+

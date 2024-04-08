@@ -1,0 +1,29 @@
+@keyframes scrollRight{
+    0%{
+        transform: translateX(120rem);
+    }
+    100%{
+        transform: translateX(-280rem);
+    }
+}
+
+@keyframes scrollRight2 {
+    0% {
+        transform: translateX(100rem);
+    }
+
+    100% {
+        transform: translateX(-120rem);
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
